@@ -1,0 +1,157 @@
+/* =========================================
+   ATITUS CLUB
+   ETAPA 2 - PARTE 1
+   Configurações globais
+========================================= */
+
+
+/* =========================================
+   1. RESET CSS
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   2. VARIÁVEIS GLOBAIS
+========================================= */
+
+:root {
+
+    /* Cores principais */
+    --cor-fundo: #050505;
+    --cor-roxo: #9400e8;
+    --cor-roxo-escuro: #6500a8;
+    --cor-roxo-claro: #b52cff;
+
+    /* Cores de texto */
+    --cor-texto: #f5f5f5;
+    --cor-texto-secundario: #c9c9c9;
+
+    /* Cores auxiliares */
+    --cor-borda: #292929;
+    --cor-input: #111111;
+    --cor-branco: #ffffff;
+
+    /* Tipografia */
+    --fonte-principal: Arial, Helvetica, sans-serif;
+
+    /* Espaçamentos */
+    --espacamento-pequeno: 8px;
+    --espacamento-medio: 16px;
+    --espacamento-grande: 32px;
+
+    /* Bordas */
+    --borda-arredondada: 12px;
+
+    /* Efeitos */
+    --sombra-roxa: 0 0 18px rgba(148, 0, 232, 0.45);
+
+    /* Largura máxima do conteúdo */
+    --largura-maxima: 1440px;
+
+}
+
+
+/* =========================================
+   3. CONFIGURAÇÕES DO HTML
+========================================= */
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+
+/* =========================================
+   4. CONFIGURAÇÕES DO BODY
+========================================= */
+
+body {
+
+    background-color: var(--cor-fundo);
+
+    color: var(--cor-texto);
+
+    font-family: var(--fonte-principal);
+
+    font-size: 16px;
+
+    line-height: 1.6;
+
+    min-height: 100vh;
+
+}
+
+
+/* =========================================
+   5. CONFIGURAÇÕES DE LINKS
+========================================= */
+
+a {
+
+    color: inherit;
+
+    text-decoration: none;
+
+}
+
+
+/* =========================================
+   6. CONFIGURAÇÕES DE LISTAS
+========================================= */
+
+ul {
+
+    list-style: none;
+
+}
+
+
+/* =========================================
+   7. CONFIGURAÇÕES DE IMAGENS
+========================================= */
+
+img {
+
+    display: block;
+
+    max-width: 100%;
+
+    height: auto;
+
+}
+
+
+/* =========================================
+   8. CONFIGURAÇÕES DE BOTÕES E CAMPOS
+========================================= */
+
+button,
+input,
+select {
+
+    font: inherit;
+
+}
+
+
+/* =========================================
+   9. ACESSIBILIDADE
+========================================= */
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+
+    outline: 2px solid var(--cor-roxo-claro);
+
+    outline-offset: 4px;
+
+}
