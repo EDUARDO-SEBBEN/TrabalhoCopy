@@ -155,3 +155,233 @@ select:focus-visible {
     outline-offset: 4px;
 
 }
+
+/* =========================================
+   ETAPA 2 - PARTE 2
+   CABEÇALHO ATITUS CLUB
+========================================= */
+
+
+/* =========================================
+   1. ESTRUTURA DO CABEÇALHO
+========================================= */
+
+.cabecalho {
+
+    width: 100%;
+
+    max-width: var(--largura-maxima);
+
+    margin: 0 auto;
+
+    padding: 20px 24px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 24px;
+
+}
+
+
+/* =========================================
+   2. LOGO ATITUS CLUB
+========================================= */
+
+.logo {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: var(--cor-roxo);
+
+    line-height: 1;
+
+}
+
+
+/* Nome principal */
+
+.logo-principal {
+
+    font-size: 32px;
+
+    font-weight: 800;
+
+    font-style: italic;
+
+    letter-spacing: -2px;
+
+}
+
+
+/* Texto CLUB */
+
+.logo-secundario {
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 8px;
+
+    margin-left: 8px;
+
+}
+
+
+/* =========================================
+   3. MENU DE NAVEGAÇÃO
+========================================= */
+
+.navegacao {
+
+    width: 100%;
+
+}
+
+
+.menu {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 20px;
+
+}
+
+
+.menu a {
+
+    color: var(--cor-texto-secundario);
+
+    font-size: 15px;
+
+    transition: color 0.3s ease;
+
+}
+
+
+/* Efeito ao passar o mouse */
+
+.menu a:hover {
+
+    color: var(--cor-roxo-claro);
+
+}
+
+
+/* =========================================
+   4. BOTÃO ENTRAR
+========================================= */
+
+.botao-entrar {
+
+    display: inline-flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    min-width: 140px;
+
+    padding: 12px 28px;
+
+    background-color: var(--cor-roxo);
+
+    color: var(--cor-branco);
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    border-radius: 50px;
+
+    box-shadow: var(--sombra-roxa);
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+
+}
+
+
+/* Efeito hover */
+
+.botao-entrar:hover {
+
+    background-color: var(--cor-roxo-claro);
+
+    box-shadow: 0 0 25px rgba(148, 0, 232, 0.7);
+
+    transform: translateY(-2px);
+
+}
+
+
+/* =========================================
+   5. RESPONSIVIDADE DO CABEÇALHO
+   TELAS MAIORES
+========================================= */
+
+@media (min-width: 768px) {
+
+    .cabecalho {
+
+        flex-direction: row;
+
+        justify-content: space-between;
+
+        padding: 24px 40px;
+
+        gap: 30px;
+
+    }
+
+
+    .navegacao {
+
+        width: auto;
+
+    }
+
+
+    .menu {
+
+        flex-wrap: nowrap;
+
+        gap: 28px;
+
+    }
+
+
+    .menu a {
+
+        font-size: 16px;
+
+        white-space: nowrap;
+
+    }
+
+
+    .botao-entrar {
+
+        min-width: 145px;
+
+    }
+
+}
