@@ -1043,3 +1043,302 @@ select:focus-visible {
     }
 
 }
+/* =========================================
+   ETAPA 2 - PARTE 6
+   RODAPÉ ATITUS CLUB
+========================================= */
+
+
+/* =========================================
+   1. ESTRUTURA PRINCIPAL DO RODAPÉ
+========================================= */
+
+.rodape {
+
+    width: 100%;
+
+    background-color: #080808;
+
+    border-top: 1px solid var(--cor-borda);
+
+    padding: 40px 24px 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 32px;
+
+}
+
+
+/* =========================================
+   2. MARCA DO RODAPÉ
+========================================= */
+
+.rodape-marca {
+
+    text-align: center;
+
+}
+
+
+.rodape-logo {
+
+    display: inline-block;
+
+    color: var(--cor-roxo);
+
+    font-size: 26px;
+
+    font-weight: 800;
+
+    font-style: italic;
+
+    transition: color 0.3s ease;
+
+}
+
+
+.rodape-logo:hover {
+
+    color: var(--cor-roxo-claro);
+
+}
+
+
+.rodape-marca p {
+
+    color: var(--cor-texto-secundario);
+
+    font-size: 14px;
+
+    margin-top: 6px;
+
+}
+
+
+/* =========================================
+   3. NAVEGAÇÃO DO RODAPÉ
+========================================= */
+
+.rodape-navegacao ul {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 14px;
+
+}
+
+
+.rodape-navegacao a {
+
+    color: var(--cor-texto-secundario);
+
+    font-size: 14px;
+
+    transition: color 0.3s ease;
+
+}
+
+
+.rodape-navegacao a:hover {
+
+    color: var(--cor-roxo-claro);
+
+}
+
+
+/* =========================================
+   4. REDES SOCIAIS
+========================================= */
+
+.rodape-redes {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 16px;
+
+}
+
+
+.rodape-redes h2 {
+
+    color: var(--cor-texto);
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    text-align: center;
+
+}
+
+
+/* Lista de redes sociais */
+
+.rodape-redes ul {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 12px;
+
+}
+
+
+/* Botões das redes sociais */
+
+.rodape-redes a {
+
+    display: inline-flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 10px 16px;
+
+    min-width: 100px;
+
+    background-color: #111111;
+
+    color: var(--cor-texto);
+
+    border: 1px solid var(--cor-borda);
+
+    border-radius: 8px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    transition:
+        background-color 0.3s ease,
+        border-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+
+}
+
+
+/* Efeito ao passar o mouse */
+
+.rodape-redes a:hover {
+
+    background-color: var(--cor-roxo-escuro);
+
+    border-color: var(--cor-roxo);
+
+    color: var(--cor-branco);
+
+    transform: translateY(-3px);
+
+}
+
+
+/* =========================================
+   5. DIREITOS AUTORAIS
+========================================= */
+
+.rodape-direitos {
+
+    width: 100%;
+
+    padding-top: 20px;
+
+    border-top: 1px solid var(--cor-borda);
+
+    text-align: center;
+
+}
+
+
+.rodape-direitos p {
+
+    color: #858585;
+
+    font-size: 12px;
+
+}
+
+
+/* =========================================
+   6. RESPONSIVIDADE
+   TABLETS E DESKTOPS
+========================================= */
+
+@media (min-width: 768px) {
+
+    .rodape {
+
+        padding: 50px 40px 24px;
+
+        flex-direction: row;
+
+        flex-wrap: wrap;
+
+        justify-content: space-between;
+
+        align-items: flex-start;
+
+        gap: 40px;
+
+    }
+
+
+    .rodape-marca {
+
+        text-align: left;
+
+    }
+
+
+    .rodape-navegacao ul {
+
+        align-items: flex-start;
+
+    }
+
+
+    .rodape-redes {
+
+        align-items: flex-start;
+
+    }
+
+
+    .rodape-redes h2 {
+
+        text-align: left;
+
+    }
+
+
+    .rodape-redes ul {
+
+        justify-content: flex-start;
+
+    }
+
+
+    .rodape-direitos {
+
+        flex-basis: 100%;
+
+    }
+
+}
