@@ -892,3 +892,154 @@ select:focus-visible {
     }
 
 }
+
+/* =========================================
+   ETAPA 2 - PARTE 5
+   SEÇÕES COMPLEMENTARES
+========================================= */
+
+
+/* =========================================
+   1. CONFIGURAÇÕES GERAIS DAS SEÇÕES
+========================================= */
+
+.secao-cursos,
+.secao-empresas,
+.secao-sobre {
+
+    width: 100%;
+
+    max-width: var(--largura-maxima);
+
+    margin: 0 auto;
+
+    padding: 60px 24px;
+
+    text-align: center;
+
+    border-top: 1px solid var(--cor-borda);
+
+}
+
+
+/* =========================================
+   2. TÍTULOS DAS SEÇÕES
+========================================= */
+
+.secao-cursos h2,
+.secao-empresas h2,
+.secao-sobre h2 {
+
+    color: var(--cor-roxo);
+
+    font-size: clamp(24px, 4vw, 36px);
+
+    font-weight: 800;
+
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* =========================================
+   3. TEXTOS DAS SEÇÕES
+========================================= */
+
+.secao-cursos p,
+.secao-empresas p,
+.secao-sobre p {
+
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    color: var(--cor-texto-secundario);
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+}
+
+
+/* =========================================
+   4. SEÇÃO DE CURSOS
+========================================= */
+
+.secao-cursos {
+
+    background-color: #080808;
+
+}
+
+
+/* =========================================
+   5. SEÇÃO PARA EMPRESAS
+========================================= */
+
+.secao-empresas {
+
+    background-color: #0c0c0c;
+
+}
+
+
+/* =========================================
+   6. SEÇÃO SOBRE
+========================================= */
+
+.secao-sobre {
+
+    background-color: #080808;
+
+}
+
+
+/* =========================================
+   7. EFEITO VISUAL NOS TÍTULOS
+========================================= */
+
+.secao-cursos h2,
+.secao-empresas h2,
+.secao-sobre h2 {
+
+    transition: color 0.3s ease;
+
+}
+
+
+.secao-cursos h2:hover,
+.secao-empresas h2:hover,
+.secao-sobre h2:hover {
+
+    color: var(--cor-roxo-claro);
+
+}
+
+
+/* =========================================
+   8. RESPONSIVIDADE
+========================================= */
+
+@media (min-width: 768px) {
+
+    .secao-cursos,
+    .secao-empresas,
+    .secao-sobre {
+
+        padding: 80px 40px;
+
+    }
+
+
+    .secao-cursos p,
+    .secao-empresas p,
+    .secao-sobre p {
+
+        font-size: 18px;
+
+    }
+
+}
