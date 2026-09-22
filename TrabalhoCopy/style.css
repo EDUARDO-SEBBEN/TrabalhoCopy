@@ -385,3 +385,227 @@ select:focus-visible {
     }
 
 }
+
+/* =========================================
+   ETAPA 2 - PARTE 3
+   SEÇÃO PRINCIPAL (HERO)
+========================================= */
+
+
+/* =========================================
+   1. ESTRUTURA PRINCIPAL
+========================================= */
+
+.hero {
+
+    width: 100%;
+
+    max-width: var(--largura-maxima);
+
+    margin: 0 auto;
+
+    padding: 40px 24px;
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+
+    align-items: center;
+
+}
+
+
+/* =========================================
+   2. CONTEÚDO TEXTUAL
+========================================= */
+
+.hero-conteudo {
+
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+}
+
+
+/* =========================================
+   3. SUBTÍTULO
+========================================= */
+
+.hero-subtitulo {
+
+    color: var(--cor-texto);
+
+    font-size: 24px;
+
+    font-weight: 400;
+
+    margin-bottom: 4px;
+
+}
+
+
+/* =========================================
+   4. TÍTULO PRINCIPAL
+========================================= */
+
+.hero-conteudo h1 {
+
+    color: var(--cor-roxo);
+
+    font-size: clamp(32px, 5vw, 54px);
+
+    font-weight: 800;
+
+    line-height: 1.15;
+
+    margin-bottom: 24px;
+
+}
+
+
+/* Destaque do título */
+
+.hero-conteudo h1 span {
+
+    display: block;
+
+    color: var(--cor-roxo);
+
+}
+
+
+/* =========================================
+   5. DESCRIÇÃO
+========================================= */
+
+.hero-descricao {
+
+    color: var(--cor-texto-secundario);
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    max-width: 580px;
+
+    margin-bottom: 32px;
+
+}
+
+
+/* =========================================
+   6. ILUSTRAÇÃO
+========================================= */
+
+.hero-ilustracao {
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+
+/* Imagem da personagem */
+
+.personagem {
+
+    width: 100%;
+
+    max-width: 480px;
+
+    height: auto;
+
+    object-fit: contain;
+
+}
+
+
+/* =========================================
+   7. RESPONSIVIDADE
+   TABLETS E DESKTOPS
+========================================= */
+
+@media (min-width: 768px) {
+
+    .hero {
+
+        grid-template-columns: 1.1fr 0.9fr;
+
+        gap: 40px;
+
+        padding: 60px 40px;
+
+    }
+
+
+    .hero-conteudo {
+
+        max-width: 650px;
+
+    }
+
+
+    .hero-subtitulo {
+
+        font-size: 28px;
+
+    }
+
+
+    .hero-descricao {
+
+        font-size: 18px;
+
+    }
+
+
+    .hero-ilustracao {
+
+        justify-content: flex-end;
+
+    }
+
+
+    .personagem {
+
+        max-width: 560px;
+
+    }
+
+}
+
+
+/* =========================================
+   8. TELAS GRANDES
+========================================= */
+
+@media (min-width: 1200px) {
+
+    .hero {
+
+        gap: 60px;
+
+        padding: 80px 40px;
+
+    }
+
+
+    .personagem {
+
+        max-width: 650px;
+
+    }
+
+}
