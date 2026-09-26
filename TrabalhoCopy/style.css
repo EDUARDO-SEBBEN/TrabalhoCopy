@@ -1342,3 +1342,178 @@ select:focus-visible {
     }
 
 }
+
+/* =========================================
+   ETAPA 2 - PARTE 7
+   RESPONSIVIDADE E AJUSTES FINAIS
+========================================= */
+
+
+/* =========================================
+   1. EVITAR TRANSBORDAMENTO HORIZONTAL
+========================================= */
+
+body {
+
+    overflow-x: hidden;
+
+}
+
+
+/* =========================================
+   2. AJUSTES PARA CELULARES PEQUENOS
+========================================= */
+
+@media (max-width: 480px) {
+
+    /* Cabeçalho */
+
+    .cabecalho {
+
+        padding: 18px 16px;
+
+    }
+
+
+    /* Logo */
+
+    .logo-principal {
+
+        font-size: 28px;
+
+    }
+
+
+    .logo-secundario {
+
+        font-size: 12px;
+
+        letter-spacing: 6px;
+
+    }
+
+
+    /* Menu */
+
+    .menu {
+
+        gap: 12px;
+
+    }
+
+
+    .menu a {
+
+        font-size: 13px;
+
+    }
+
+
+    /* Botão entrar */
+
+    .botao-entrar {
+
+        width: 100%;
+
+    }
+
+
+    /* Hero */
+
+    .hero {
+
+        padding: 32px 16px;
+
+        gap: 32px;
+
+    }
+
+
+    /* Subtítulo */
+
+    .hero-subtitulo {
+
+        font-size: 20px;
+
+    }
+
+
+    /* Título */
+
+    .hero-conteudo h1 {
+
+        font-size: 34px;
+
+    }
+
+
+    /* Descrição */
+
+    .hero-descricao {
+
+        font-size: 15px;
+
+    }
+
+
+    /* Formulário */
+
+    .cadastro {
+
+        padding: 20px 16px;
+
+    }
+
+
+    .cadastro h2 {
+
+        font-size: 21px;
+
+    }
+
+
+    /* Imagem */
+
+    .personagem {
+
+        max-width: 360px;
+
+    }
+
+
+    /* Seções */
+
+    .secao-cursos,
+    .secao-empresas,
+    .secao-sobre {
+
+        padding: 50px 16px;
+
+    }
+
+
+    /* Rodapé */
+
+    .rodape {
+
+        padding: 36px 16px 20px;
+
+    }
+
+
+    .rodape-redes ul {
+
+        flex-direction: column;
+
+        width: 100%;
+
+    }
+
+
+    .rodape-redes a {
+
+        width: 100%;
+
+    }
+
+}
